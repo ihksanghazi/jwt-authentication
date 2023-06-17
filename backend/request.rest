@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJOdXJzYW5keSBJaGtzYW4iLCJlbWFpbCI6Im51cnNhbmR5aWhrc2FuOTdAZ21haWwuY29tIiwiaWF0IjoxNjg2OTMwODUwLCJleHAiOjE2ODY5MzA4NzB9.OOrBgoHENiyOjTdymVG-zsklrflHoiorV9RlCctGAIo
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "name":"Nursandy Ihksan",
+  "email":"nursandyihksan97@gmail.com",
+  "password":"123456",
+  "confPassword":"123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email":"nursandyihksan97@gmail.com",
+  "password":"123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
